@@ -52,23 +52,23 @@
 // countdown(10, done);
 
 
-let lunchTime = true;
+// let lunchTime = true;
 
-const orderMeSomeFood = function() {
-    return new Promise(function (resovle, reject) {
-        if(lunchTime) {
-            let myLunch = {
-                lunch: "Nachos",
-                drink: "Cola"
-            }
-            resovle(myLunch)
-        } else {
-            let errMessage = new Error("Not time for lunch");
-            reject(errMessage);
-        }
-    })
-}
+// const orderMeSomeFood = function() {
+//     return new Promise(function (resovle, reject) {
+//         if(lunchTime) {
+//             let myLunch = {
+//                 lunch: "Nachos",
+//                 drink: "Cola"
+//             }
+//             resovle(myLunch)
+//         } else {
+//             let errMessage = new Error("Not time for lunch");
+//             reject(errMessage);
+//         }
+//     })
+// }
 
-orderMeSomeFood()
-.then(response => console.log(response))
-.catch(error => console.log(error))
+// orderMeSomeFood()
+// .then(response => console.log(response))
+// .catch(error => console.log(error))
